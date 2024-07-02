@@ -1,4 +1,4 @@
-export const OWNER = "Hk-Gosuto";
+export const OWNER = "simulacraliasing";
 export const REPO = "ChatGPT-Next-Web-LangChain";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
@@ -8,7 +8,7 @@ export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/c
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
-export const DEFAULT_API_HOST = "https://api.nextchat.dev";
+export const DEFAULT_API_HOST = "https://chat.simulacraliasing.com/api/proxy";
 export const OPENAI_BASE_URL = "https://api.openai.com";
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
 export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
@@ -160,18 +160,9 @@ export const DEFAULT_STT_ENGINES = ["WebAPI", "OpenAI Whisper"];
 export const FIREFOX_DEFAULT_STT_ENGINE = "OpenAI Whisper";
 const openaiModels = [
   "gpt-3.5-turbo",
-  "gpt-3.5-turbo-1106",
-  "gpt-3.5-turbo-0125",
-  "gpt-4",
-  "gpt-4-0613",
-  "gpt-4-32k",
-  "gpt-4-32k-0613",
   "gpt-4-turbo",
-  "gpt-4-turbo-preview",
   "gpt-4o",
-  "gpt-4o-2024-05-13",
   "gpt-4-vision-preview",
-  "gpt-4-turbo-2024-04-09",
 ];
 
 const googleModels = [
@@ -199,24 +190,6 @@ export const DEFAULT_MODELS = [
       id: "openai",
       providerName: "OpenAI",
       providerType: "openai",
-    },
-  })),
-  ...googleModels.map((name) => ({
-    name,
-    available: true,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-    },
-  })),
-  ...anthropicModels.map((name) => ({
-    name,
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
     },
   })),
 ] as const;
