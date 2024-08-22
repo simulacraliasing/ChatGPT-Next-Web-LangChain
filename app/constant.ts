@@ -1,4 +1,4 @@
-export const OWNER = "Hk-Gosuto";
+export const OWNER = "simulacraliasing";
 export const REPO = "ChatGPT-Next-Web-LangChain";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
@@ -8,10 +8,10 @@ export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/c
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
 export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
-export const DEFAULT_API_HOST = "https://api.nextchat.dev";
-export const OPENAI_BASE_URL = "https://api.openai.com";
+export const DEFAULT_API_HOST = "https://openai.simulacraliasing.com";
+export const OPENAI_BASE_URL = "https://openai.simulacraliasing.com";
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
-export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
+export const ANTHROPIC_BASE_URL = "https://openai.simulacraliasing.com";
 
 export const BAIDU_BASE_URL = "https://aip.baidubce.com";
 export const BAIDU_OATUH_URL = `${BAIDU_BASE_URL}/oauth/2.0/token`;
