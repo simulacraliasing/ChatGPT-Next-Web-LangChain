@@ -321,6 +321,8 @@ const googleModels = [
   "gemini-1.5-flash-latest",
   "gemini-pro-vision",
   "gemini-exp-1114",
+  "gemini-2.0-flash-exp",
+  "gemini-2.0-flash-thinking-exp",
 ];
 
 const anthropicModels = [
@@ -401,6 +403,11 @@ const chatglmModels = [
   "glm-4-long",
   "glm-4-flashx",
   "glm-4-flash",
+];
+
+const deepseekModels = [
+  "deepseek-v3",
+  "deepseek-reasoner",
 ];
 
 let seq = 1000; // 内置的模型序号生成器从1000开始
@@ -535,6 +542,17 @@ export const DEFAULT_MODELS = [
       providerName: "ChatGLM",
       providerType: "chatglm",
       sorted: 12,
+    },
+  })),
+  ...deepseekModels.map((name) => ({
+    name,
+    available: true,
+    sorted: seq++,
+    provider: {
+      id: "deepseek",
+      providerName: "DeepSeek",
+      providerType: "deepseek",
+      sorted: 13,
     },
   })),
 ] as const;
